@@ -26,6 +26,7 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+  font-size: 14px;
 }
 
 img {
@@ -37,19 +38,13 @@ img {
   flex-direction: column;
 }
 
-
-@media all and (min-width: 800px) {
-  main {
-  padding: 0 10%;
-  }
-
-  .group {
-    flex-direction: row;
-  }
-}
-
 .brownBg {
   background-color: rgb(130, 86, 28);
+}
+
+.top-item, .bottom-item, .pair {
+  display: flex;
+  flex-direction: row;
 }
 
 .item {
@@ -59,4 +54,18 @@ img {
 
 .large-item {
   flex: 2;
+}
+
+@media all and (min-width: 800px) {
+  main {
+  padding: 0 10%;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
